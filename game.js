@@ -46,13 +46,13 @@ var startGame = function() {
 
 var level1 = [
  // Start,   End, Gap,  Type,   Override
-  [ 0,      4000,  500, 'step' ],
-  [ 6000,   13000, 800, 'ltr' ],
+  [ 0,      3500,  500, 'step' ],
+  [ 6000,   12500, 800, 'ltr' ],
   [ 10000,  16000, 400, 'circle' ],
   [ 17800,  20000, 500, 'straight', { x: 50 } ],
   [ 18200,  20000, 500, 'straight', { x: 90 } ],
   [ 18200,  20000, 500, 'straight', { x: 10 } ],
-  [ 22000,  25000, 400, 'wiggle', { x: 150 }],
+  [ 22000,  24500, 400, 'wiggle', { x: 150 }],
   [ 22000,  25000, 400, 'wiggle', { x: 100 }]
 ];
 
@@ -91,7 +91,7 @@ var Starfield = function(speed,opacity,numStars,clear) {
   // If the clear option is set,
   // make the background black instead of transparent
   if(clear) {
-    starCtx.fillStyle = "#000";
+    starCtx.fillStyle = "#0F0";
     starCtx.fillRect(0,0,stars.width,stars.height);
   }
 
